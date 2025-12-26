@@ -3,7 +3,7 @@ import { Send, Terminal, Cpu, ShieldCheck, Clock, RefreshCcw, User } from 'lucid
 
 // Environment-aware config
 const JARVIS_CONFIG = {
-  WEBHOOK_URL: import.meta.env.VITE_WEBHOOK_URL || 'http://localhost:5678/webhook-test/javispro212',
+  WEBHOOK_URL: 'http://localhost:5678/webhook-test/javispro212',// replace your n8n webhook url
   INITIAL_GREETING: "System online. How may I assist you today, sir?",
   ERROR_MESSAGE: "JARVIS is temporarily unavailable. Attempting to reconnect...",
   RETRY_DELAY: 5000,
