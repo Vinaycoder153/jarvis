@@ -2,19 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Send, Terminal, Cpu, ShieldCheck, Clock, RefreshCcw, User, Mic, StopCircle, Activity } from 'lucide-react';
 
 const JARVIS_CONFIG = {
-<<<<<<< HEAD
   WEBHOOK_URL: import.meta.env.VITE_WEBHOOK_URL || 'http://localhost:5678/webhook/javispro212',
   INITIAL_GREETING: "System online. Listening for commands.",
   ERROR_MESSAGE: "JARVIS is temporarily unavailable.",
   VOICE_LANG: 'en-US',
   AUTO_LISTEN_DELAY: 1500,
-=======
-  WEBHOOK_URL: 'http://localhost:5678/webhook-test/javispro212',// replace your n8n webhook url
-  INITIAL_GREETING: "System online. How may I assist you today, sir?",
-  ERROR_MESSAGE: "JARVIS is temporarily unavailable. Attempting to reconnect...",
-  RETRY_DELAY: 5000,
-  REQUEST_TIMEOUT: 30000,
->>>>>>> 4cf7637473292a816993217382205367fcdabd0e
 };
 
 const App = () => {
@@ -406,15 +398,4 @@ const App = () => {
   );
 };
 
-<<<<<<< HEAD
 export default App;
-=======
-// Export wrapped component
-export default function WrappedApp() {
-  return (
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
-  );
-}
->>>>>>> 4cf7637473292a816993217382205367fcdabd0e
